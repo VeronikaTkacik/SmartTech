@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт-візитка - SmartTech</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #004f91;
+        color: #000000;
+      }
+
+      header {
+        background-color: #004f91;
+        color: white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header img {
+        vertical-align: middle;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      header img:hover {
+        transform: scale(1.1);
+      }
+
+      header nav {
+        margin-left: 50px;
+      }
+
+      header nav a {
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        transition: color 0.3s ease;
+      }
+
+      header nav a:hover {
+        color: #00ccff;
+      }
+
+      main {
+        padding: 40px;
+        background-color: #ffffff;
+        max-width: 1200px;
+        margin: auto;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+      }
+
+      h1,
+      h2 {
+        color: #004f91;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      main section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      main section img {
+        flex: 1;
+        max-width: 30%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      main section img:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .testimonials {
+        background-color: #2c2c2c;
+        padding: 30px;
+        margin-top: 40px;
+        border-radius: 15px;
+      }
+
+      .testimonials h2 {
+        text-align: center;
+      }
+
+      .testimonial {
+        margin-bottom: 20px;
+      }
+
+      .testimonial p {
+        font-style: italic;
+      }
+
+      .testimonial cite {
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+        color: #504343;
+      }
+
+      .team-section {
+        margin-top: 40px;
+      }
+
+      .team-section img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .team-section h2 {
+        text-align: center;
+      }
+
+      .team-members {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .team-member {
+        text-align: center;
+        max-width: 200px;
+      }
+
+      .team-member h3 {
+        margin-top: 10px;
+        color: #00ccff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="лого1.png" width="70" height="70" alt="Логотип" />
+      <nav>
+        <a href="#about">Про нас</a>
+        <a href="#products">Продукти</a>
+        <a href="#services">Послуги</a>
+        <a href="#testimonials">Відгуки</a>
+        <a href="#contact">Контакти</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Про нас</h1>
+        <p>
+          Ласкаво просимо до «SmartTech Store»! Ми спеціалізуємося на продажу
+          техніки Apple, забезпечуючи наших клієнтів найновішими моделями за
+          вигідними цінами. Наша місія – допомогти вам знайти ідеальні пристрої,
+          що відповідають вашим потребам та стилю життя.
+        </p>
+        <p>
+          Ми пропонуємо широкий асортимент продуктів Apple, включаючи телефони,
+          планшети, ноутбуки та аксесуари. Наша команда професіоналів завжди
+          готова допомогти вам з вибором та відповісти на всі ваші запитання.
+        </p>
+      </section>
+
+      <section id="products">
+        <h2>Наші продукти</h2>
+        <section>
+          <img
+            src="https://eu-central-1.linodeobjects.com/list/production/427094/gallery/big/667973d7e0a31.jpg?1316609607"
+            alt="Продукт 1"
+          />
+          <img
+            src="https://eu-central-1.linodeobjects.com/list/production/427094/gallery/big/667973de18cfb.jpg?1316609607"
+            alt="Продукт 2"
+          />
+          <img
+            src="https://eu-central-1.linodeobjects.com/list/production/427094/gallery/big/667973e38b8a6.jpg?1316609607"
+            alt="Продукт 3"
+          />
+        </section>
+        <p>В нашому магазині ви знайдете:</p>
+        <ul>
+          <li>IPhone - нові моделі з гарантією</li>
+          <li>AirPods - бездротові навушники з високою якістю звуку</li>
+          <li>Mac - потужні ноутбуки для професійної роботи</li>
+          <li>Watch - стильні смарт-годинники</li>
+          <li>Аксесуари - чохли, зарядні пристрої та багато іншого</li>
+        </ul>
+      </section>
+
+      <section id="services">
+        <h2>Наші послуги</h2>
+        <p>
+          Ми пропонуємо не лише продаж техніки, але й такі додаткові послуги:
+        </p>
+        <ul>
+          <li>Обмін старої техніки на нову (trade in)</li>
+          <li>Ремонт та обслуговування пристроїв Apple</li>
+          <li>Консультації та технічна підтримка</li>
+          <li>Доставка по всій країні</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Контакти</h2>
+        <p>
+          Зв'яжіться з нами для отримання додаткової інформації або для
+          здійснення покупки:
+        </p>
+        <p><strong>Адреса:</strong> м. Київ, вул. Хрещатик, 10</p>
+        <p><strong>Телефон:</strong> +38 (044) 123-45-67</p>
+        <p><strong>Email:</strong> info@SmartTechstore.ua</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 SmartTech Store. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
